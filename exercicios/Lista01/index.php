@@ -31,7 +31,37 @@ echo $resultMedia = makeMedia(6,1,2);
     }
   }
 
-  echo $resultadoIMC = calcularIMC(1.80, 'Masculino');
-  echo $resultadoIMC = calcularIMC(1.55, 'Feminino');
+ echo $resultadoIMC = calcularIMC(1.80, 'Masculino');
+ echo $resultadoIMC = calcularIMC(1.55, 'Feminino');
 ?>
 
+//Ex 4
+<?php
+  echo '<h1> Olá mundo!</h1>'
+?>
+
+// Ex 5
+<?php
+  $link = 'http://www.utfpr.edu.br';
+  $titulo = 'UTFPR';
+
+  echo "<a href='$link'>$titulo</a>";
+?>
+
+//Ex 6
+
+// Vai imprimir na tela o valor de "Text na variável $campo"
+<html>
+<?php 
+  $titulo = "Minha pagina";
+  $campo = "text";
+  $value = "um formulário";
+?>
+<head>
+  <title><?php echo $titulo?></title>
+</head>
+<body>
+  <p>Campo para um texto:</p>
+  <input type="<?= $campo ?>" value="<?= $value ?>">
+</body>
+</html>
